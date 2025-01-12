@@ -3,4 +3,4 @@
 这里完善了Hao lyu老师的代码https://github.com/IncubatorShokuhou/meic2wrf_hourly 为大家提供一个相对简单易行的MIX数据插值工具，请参考Hao lyu老师的脚本说明。
 首先我们在官网下载数据后，需要使用split.py脚本按月份和排放部门对数据进行拆分。
 准备好拆分后的数据，wrfinput_d0i数据后就可以使用mix.py脚本，修改排放月份和起止时间，一步产生排放源的.nc文件。
-使用rename.linux代码在linux环境下对nc文件进行重命名，以满足wrf读取要求
+使用rename.linux代码在linux环境下对nc文件进行重命名，以满足wrf读取要求。
