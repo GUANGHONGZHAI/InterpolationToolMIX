@@ -1,0 +1,10 @@
+for file in wrfchemi_d01_*_*_*_*.nc; do
+    newname=$(echo "$file" | sed 's/\(.*_[0-9][0-9]\)_\([0-9][0-9]\)_\([0-9][0-9]\)/\1:\2:\3/')
+    mv "$file" "$newname"
+done
+
+
+for file in wrfchemi_d01_*.nc; do
+    newname=$(echo "$file" | sed 's/\.nc$//')
+    mv "$file" "$newname"
+done
